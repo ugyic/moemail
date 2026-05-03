@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          node-version: 22
           fetch-depth: 0  # Get full git history for checking file changes
 
       - name: Get previous tag
